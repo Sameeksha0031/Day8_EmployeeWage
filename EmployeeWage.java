@@ -1,13 +1,18 @@
 package com.employeewages.util;
 
 public class EmployeeWage {
-
-	 public void computeAttendance() {
-		 int attendance =(int)(Math.random()*10)%2;
+	
+	public void computeAttendance() {
+		 int attendance =(int)(Math.random()*10)%3;
 		 if (attendance == 1 ) {
 	        	
 	        	System.out.println(" Employee is Present ");
 	        	employeeWage();
+	        	
+	        }else if(attendance == 2) {
+	        	int partTimehour = 4;
+	        	System.out.println(" Part time Employee ");
+	        	System.out.println(" Part time hour : " +partTimehour);
 	        	
 	        } else {
 	        	
@@ -16,7 +21,7 @@ public class EmployeeWage {
 	 }
 	 
 	 public void employeeWage() {
-			int wagePerhour = 20;
+		    int wagePerhour = 20;
 			int fullDayhour = 8;
 			int dailyWage = wagePerhour * fullDayhour;
 			System.out.println(" Employee daily wage is : "+ dailyWage);
